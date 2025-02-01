@@ -1,10 +1,20 @@
-from flask import Flask, render_template
+import streamlit as st
+import matplotlib.pyplot as plt
+import numpy as np
 
-app = Flask(__name__)
-@app.route("/")
 
-def home():
-    return render_template("index.html")
 
-if __name__=="__main__":
-    app.run(debug = True)
+st.title('My streamlit app')
+slider_value = st.slider('Select a number:', 0, 100, 50)
+st.write('Hehe Hiii! pls tell me about yourself: ')
+user_input=st.text_input('Enter your name: ')
+st.write(f"Hello Master {user_input}")
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Create a plot
+plt.plot(x, y)
+
+# Display the plot in Streamlit
+st.pyplot(plt)
