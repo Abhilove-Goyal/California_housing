@@ -14,6 +14,8 @@ st.write('Hehe Hiii! pls tell me about yourself: ')
 user_input = st.text_input('Enter your name: ')
 st.write(f"Hello Master {user_input}")
 
+# padhle bhai 
+
 st.title("Create static table using st.table(df)")
 df=pd.DataFrame({
     'first column' : [1,2,3,4],
