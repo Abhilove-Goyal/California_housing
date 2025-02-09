@@ -1,6 +1,6 @@
 longitude: continuous.
 latitude: continuous.
-housingMedianAge: continuous. 
+: continuous. 
 totalRooms: continuous. 
 totalBedrooms: continuous. 
 population: continuous. 
