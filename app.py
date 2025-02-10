@@ -2,9 +2,17 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import folium
+from streamlit_folium import st_folium
 
 # Title
-st.title('My Streamlit App')
+st.title('California House Price Predictor')
+
+df = pd.read_csv('raw_df')
+df.rename(columns={'Latitude':'latitude',
+                   'Longitude':'longitude'},inplace=True)
+st.map(df)
+
 
 # Slider for selecting a number
 slider_value = st.slider('Select a number:', 0, 100, 50)
