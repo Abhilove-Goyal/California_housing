@@ -3,7 +3,8 @@ my_model.pkl
 __pycache__/
 *.py[cod]
 *$py.class
-
+cal_housing[1].data
+cal_housing[1].domain
 # C extensions
 *.so
 
